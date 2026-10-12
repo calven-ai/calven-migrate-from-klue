@@ -11,6 +11,20 @@ calven-migrate-from-klue is a free, open-source command-line tool that exports t
 
 > This is an independent open-source project by Calven AI, LLC. It is not affiliated with, endorsed by or sponsored by Klue Labs Inc. Klue is a trademark of Klue Labs Inc., used here only to identify the service this tool works with. The tool runs on your machine, signs in with your own Klue account through Klue's official MCP server, and writes files only to your computer. Nothing is sent to Calven. Use it in line with your agreement with Klue: content that Klue wrote or sourced for you (for example news and review excerpts) is licensed to you for internal use during your subscription, not owned by you. Provided under the MIT License, without warranty; check the export against your Klue workspace before relying on it.
 
+## Not technical? Let Claude do it
+
+You don't need a terminal. Open [Claude](https://claude.ai), start a new chat and paste:
+
+```text
+I want to migrate all of my cards and battlecards out of Klue into a folder
+on my laptop. Follow the guide at
+https://github.com/calven-ai/calven-migrate-from-klue/blob/main/MIGRATION.md
+I'm not technical, so explain each step in plain language and tell me
+exactly what to click.
+```
+
+Claude picks the way that works for your setup, walks you through the Klue sign-in and leaves you with a `klue-export-<date>` folder holding every card and battlecard your account can see. The steps Claude follows are in [MIGRATION.md](MIGRATION.md).
+
 ## How do I export my cards and battlecards from Klue?
 
 You need Node.js 20 or later and a Klue login. Run:
@@ -66,11 +80,21 @@ The files are plain Markdown and JSON, so any tool that takes uploads can import
 
 ## Can Claude run the export for me?
 
-Yes. The [migrate-from-klue skill](skills/migrate-from-klue/SKILL.md) has Claude Code run this command. It runs the command rather than reading cards through a chat, so nothing is paraphrased and large workspaces do not hit context limits. If you then work with the files in an AI tool, use one that does not train on your inputs, such as Claude Team, Enterprise or the API.
+Yes, in three ways. [MIGRATION.md](MIGRATION.md) tells Claude which to use:
+
+| Where you use Claude | How the export runs |
+| --- | --- |
+| Claude Code, or the Code tab of the Claude desktop app | Claude runs this command on your computer and the folder appears there |
+| Cowork in the Claude desktop app, with the Klue connector | Claude pages through Klue's MCP server and writes the folder straight into a folder you share |
+| claude.ai or the desktop chat, with the Klue connector | Claude pages through Klue's MCP server, builds the same folder and gives you a zip to download |
+
+The [migrate-from-klue skill](skills/migrate-from-klue/SKILL.md) packages the same steps for Claude Code. Running the command is preferred where Claude can: it keeps every field and large workspaces don't hit chat limits. On the connector path, Claude saves Klue's replies as they arrive and builds the files from them with code rather than rewriting cards by hand. If you work with the files in an AI tool, use one that does not train on your inputs, such as Claude Team, Enterprise or the API.
 
 ## FAQ
 
 **Is it free?** Yes. It is MIT-licensed and you need no Calven account.
+
+**Do I need to be technical?** No. Paste the prompt from [Not technical? Let Claude do it](#not-technical-let-claude-do-it) into Claude and it guides you.
 
 **Does Calven see my data?** No. The tool talks only to Klue and writes only to your computer.
 
