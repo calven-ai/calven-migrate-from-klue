@@ -1,0 +1,35 @@
+{
+  "name": "calven-migrate-from-klue",
+  "version": "0.1.0",
+  "description": "Migrate from Klue: export your Klue cards and battlecards to Markdown and JSON files on your own machine, in one command.",
+  "license": "MIT",
+  "author": "Calven AI, LLC",
+  "type": "module",
+  "bin": {
+    "calven-migrate-from-klue": "bin/calven-migrate-from-klue.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "skills",
+    "docs"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "klue",
+    "competitive-intelligence",
+    "battlecards",
+    "export",
+    "migration",
+    "mcp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calven-ai/calven-migrate-from-klue.git"
+  }
+}
