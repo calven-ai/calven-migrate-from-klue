@@ -9,8 +9,6 @@
 
 calven-migrate-from-klue is a free, open-source command-line tool that exports the cards and battlecards your Klue account can see to Markdown and JSON files on your own machine. It signs in with your own Klue account through Klue's official MCP server and sends nothing to Calven. The files work in any tool that takes uploads.
 
-> This is an independent open-source project by Calven AI, LLC. It is not affiliated with, endorsed by or sponsored by Klue Labs Inc. Klue is a trademark of Klue Labs Inc., used here only to identify the service this tool works with. The tool runs on your machine, signs in with your own Klue account through Klue's official MCP server, and writes files only to your computer. Nothing is sent to Calven. Use it in line with your agreement with Klue: content that Klue wrote or sourced for you (for example news and review excerpts) is licensed to you for internal use during your subscription, not owned by you. Provided under the MIT License, without warranty; check the export against your Klue workspace before relying on it.
-
 ## Not technical? Let Claude do it
 
 You don't need a terminal. Open [Claude](https://claude.ai), start a new chat and paste:
@@ -118,3 +116,7 @@ Tested end to end against a simulated Klue server across four paging styles and 
 ## License
 
 [MIT](LICENSE). Report security issues as described in [SECURITY.md](SECURITY.md).
+
+## Disclaimer
+
+This is an independent open-source project by Calven AI, LLC. It is not affiliated with, endorsed by or sponsored by Klue Labs Inc. Klue is a trademark of Klue Labs Inc., used here only to identify the service this tool works with. The tool runs on your machine, signs in with your own Klue account through Klue's official MCP server, and writes files only to your computer. Nothing is sent to Calven. Use it in line with your agreement with Klue: content that Klue wrote or sourced for you (for example news and review excerpts) is licensed to you for internal use during your subscription, not owned by you. Provided under the MIT License, without warranty; check the export against your Klue workspace before relying on it.
