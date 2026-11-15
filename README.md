@@ -113,6 +113,15 @@ The [migrate-from-klue skill](skills/migrate-from-klue/SKILL.md) packages the sa
 
 Tested end to end against a simulated Klue server across four paging styles and three response shapes, and checked against Klue's live sign-in server. The first full export on a real Klue workspace is still pending. If you run it, an issue with your `manifest.json` (counts, no content) helps.
 
+## More from Calven
+
+- [calven-mcp](https://github.com/calven-ai/calven-mcp): your approved GTM context in Claude, ChatGPT, Codex, Cursor and Copilot, through a remote MCP server.
+- [marketing-as-code](https://github.com/calven-ai/marketing-as-code): a template repo that keeps strategy, messaging and briefs as plain text for agents to read and write.
+- [demoverse](https://github.com/calven-ai/demoverse): synthetic B2B sales data: a fictional company's history in Salesforce, HubSpot, Google Drive and Slack.
+- [calven-migrate-from-crayon](https://github.com/calven-ai/calven-migrate-from-crayon): export your Crayon battlecards and win/loss stories to Markdown and JSON on your machine.
+
+All projects: [github.com/calven-ai](https://github.com/calven-ai)
+
 ## License
 
 [MIT](LICENSE). Report security issues as described in [SECURITY.md](SECURITY.md).
